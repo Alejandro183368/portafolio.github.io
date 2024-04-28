@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicas 9 a 15</title>
+</head>
+<body>
+    <form id="myform" onsubmit="return menu();">
+        <p>Selecciona la practica que desees ver</p>
+        <p>
+            <select name="practicas" id="practicas">
+                <option value="0">----------------------------------</option>
+                <option value="1">Alerta y Prompt</option>
+                <option value="2">Graficas de Calificaciones</option>
+                <option value="3">Grafico Aleatorio</option>
+                <option value="4">Ahorcado con Canva</option>
+                <option value="8">Ejemplo Grafica Función</option>
+                <option value="5">Geolocalizacion</option>
+                <option value="6">Mapa con Geolocalizacion</option>
+                <option value="7">Reto Grafica Funciones con  Limite</option>
+            </select>
+        </p>
+    <p><input type="submit"></p>
+    </form>
+    <script>
+    function menu(){ 
+       var opcion= parseInt(document.forms[0].practicas.value); 
+       switch(opcion){
+        case 1:
+            window.location.href = "alert.html";
+            return false;
+        break;
+        case 2:
+            window.location.href = "graficas_calificaciones.html";
+            return false;
+        break;
+        case 3:
+            window.location.href = "grafico_aleatorio.html";
+            return false;
+        break;
+        case 4:
+            window.location.href = "Canva.html";
+            return false;
+        break;
+        case 5:
+            window.location.href = "Geolocalizacion.html";
+            return false;
+        break;
+        case 6:
+            window.location.href = "mapa.html";
+            return false;
+        break;
+        case 7:
+            window.location.href = "Reto_funciones.html";
+            return false;
+        break;
+        case 8:
+            window.location.href = "ejemplo_graficas.html";
+            return false;
+        break;
+       } 
+    } 
+    </script>
+</body>
+</html>

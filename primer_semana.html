@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Buttons</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        color: darkblue;
+        background-color: rgba(128, 113, 113, 0.585);
+        padding: 10px;
+        position: relative;
+        top: -22px;
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: rgb(133, 5, 5);
+    }
+    button{
+        margin: 10px;
+        background-color: darkblue;
+        font-family: Verdana;
+        color: white;
+
+        padding: 6px;
+
+    }
+    button:hover{
+        color: white;
+        background-color: rgb(133, 5, 5);
+    }
+</style>
+</head>
+<body>
+<div>
+<center>
+    <h1>MENÚ DE JAVASCRIPT</h1>
+    <h2>Elije la opción que desees</h2>
+    <button onclick="Generaparrafos()">Genera Parrafos</button>
+    <button onclick="table()">Tabla según Usuario</button>
+    <button onclick="table_2()">Tabla Caracter</button>
+    <button onclick="table_3()">Tabla con Imagen</button><br>
+    <button onclick="table_4()">Tabla Randoms</button>
+    <button onclick="login()">Login</button>
+    <button onclick="converter()">Convertidor de Grados</button>
+    <button onclick="arrays()">Arreglos</button>
+    <p id="demo"></p>
+</center>
+</div> 
+
+    <script>
+        function Generaparrafos(){
+            document.getElementById("demo").innerHTML="<a href=ejecicio_1_js.html>Ejercicio 1</a>";   
+        }function table(){
+            document.getElementById("demo").innerHTML="<a href=tabla.html>Ejercicio 2</a>"; 
+        }function table_2(){
+            document.getElementById("demo").innerHTML="<a href=variante_b.html>Ejercicio 3</a>";   
+        }function table_3(){
+            document.getElementById("demo").innerHTML="<a href=tabla_js.html>Ejercicio 4</a>";   
+        }function table_4(){
+            document.getElementById("demo").innerHTML="<a href=tabala_random.html>Ejercicio 5</a>";   
+        }
+        function login(){
+            document.getElementById("demo").innerHTML="<a href=login.html>Ejercicio 6</a>";   
+        }function converter(){
+            document.getElementById("demo").innerHTML="<a href=conversor.html>Ejercicio 7</a>";   
+        }function arrays(){
+            document.getElementById("demo").innerHTML="<a href=arreglos_js.html>Ejercicio 8</a>";   
+        }
+    </script>
+</body>
+</html>
